@@ -1,0 +1,1906 @@
+2019-12-30 00:36:29 [scrapy.utils.log] INFO: Scrapy 1.0.1 started (bot: scrapybot)
+2019-12-30 00:36:29 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17763-SP0
+2019-12-30 00:36:29 [scrapy.crawler] INFO: Overridden settings: {'FEED_FORMAT': 'csv', 'FEED_URI': 'Q1.csv', 'LOG_FILE': 'Q2.json', 'LOG_LEVEL': 'INFO', 'USER_AGENT': 'Mozilla/5.0'}
+2019-12-30 00:36:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2019-12-30 00:36:32 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-12-30 00:36:32 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-12-30 00:36:32 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-12-30 00:36:32 [scrapy.core.engine] INFO: Spider opened
+2019-12-30 00:36:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-12-30 00:36:32 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-12-30 00:37:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python%26%2347Big-data-developer-Capgemini-America%2C-Inc.-Jersey-City-NJ-07097/KANBAY/6335524> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Java-or-C%2B%2B-or-Python-Developer-RMS-Computer-Corporation-New-York-NY-10001/gsc/19%26%234501014> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Lead-Quantitative-Developer-%26%2345-Leading-Hedge-Fund-%26%2345-C%2B%2B%26%2347Python-%26%2345-Fixed-Income-Affinity-North-New-York-NY-10001/10460281/6267260> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Django-Developer-Yoh-%26%2345-A-Day-%26-Zimmerman-Company-Brooklyn-NY-10001/10107614/227627> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Object-Oriented-%28Python%29-Matlen-Silver-New-York-NY-10001/matlenny/6171027> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Object-Oriented-Developer-%28python%29-Matlen-Silver-New-York-NY-10001/matlenny/6110999> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Object-Oriented-Developer-%28Python%29-Matlen-Silver-New-York-NY-10001/matlenny/6171023> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Software-Engineer-%26%2345-Python-%26%2347-Flask-2-Bridge-Partners-New-York-NY-10001/90827581/6270627> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Cincinnati-Bell-Technology-Solutions-New-York-NY-10001/10119424/6183186> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Matlen-Silver-New-York-NY-10001/matlenny/6171018> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-%7C-Financial-Intellisearch-New-York-City-NY-10001/90707274/6263092> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Matlen-Silver-Jersey-City-NJ-07097/matlenny/6093646> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-%26%2345-Equities-E%26%2345Trading-%26%2345-Major-investment-bank-Affinity-North-New-York-NY-10282/10460281/741321> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-%26%2347-Lead-Python-Engineer-%26%2345-Data-Ops-2-Bridge-Partners-New-York-NY-10001/90827581/6233323> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Software-Engineering-Manager-%26%2347-Lead-%26%2345-Python-%26%2345-JS-2-Bridge-Partners-New-York-NY-10001/90827581/6177791> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-%28Django%29-New-York-Technology-Partners-Brooklyn-NY-11201/10119106/A_Python> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/IT-Associate%2C-Level-II-%26%2345-Software-Engineering-CUNY-School-of-Professional-Studies-New-York-NY-10001/grayblok/21396> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Enterprise-Data-Manager-ACA-Compliance-Group-New-York-NY-10001/90902182/6304738> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-Engineer%28Java-%26-Python%29-Infostretch-Corporation-Nyc-NY-10001/10228528/data_engineer> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Quantitative-developer-C%23-.Net-%7C-Financial-Intellisearch-New-York-NY-08807/90707274/5925764> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Software-Development-Team-Lead-OptionMetrics-New-York-NY-10001/10107673/6177267> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-Ops-Support-Infostretch-Corporation-New-York-NY-10001/10228528/data_ops> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Software-Developer-%26%2345-Clinical-Solutions-Yoh-%26%2345-A-Day-%26-Zimmerman-Company-Woodcliff-Lake-NJ-07677/10107614/240232> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr.-Software-Engineer-BlackRock-New-York-NY-10055/10114248/R192904> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Robotics-Support-%28Pega%2C-openspan-platforms%29-Bank-Of-America-New-York-NY-10038/10118499/19081828%26%23451> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Robotics-Support-%28workfusion-platform%29-Bank-Of-America-Jersey-City-NJ-07302/10118499/19081835> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Associate%2C-Insights-%26-Analytics-New-York-Life-Insurance-Company-New-York-NY-10001/10127844a/81596%26%2345en_US> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Robotics-Support-%28Pega%2C-openspan-platforms%29-Bank-Of-America-Jersey-City-NJ-07302/10118499/19081828> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Robotics-Support-%28workfusion-platform%29-Bank-Of-America-New-York-NY-10038/10118499/19081835%26%23451> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:28 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-Engineer%26%2345-Modeler-Atlantic-Health-System-Morristown-NJ-07960/athealth/00026729> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Technical-Analyst-NTT-DATA%2C-Inc.-New-York-NY-10001/misiny1/19%26%234512685> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr.-Cloud-Developer-Insurance-Services-Office%2C-Inc.-Jersey-City-NJ-07097/10123386/405999950118901> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Manager%2C-Product-Development-%26%2345-Analytic-Solutions-The-NPD-Group-Port-Washington-NY-11050/10228857/R001718> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Cloud-Architect-%28Financial-Services%29-PwC-New-York-NY-10016/10104943/901551> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Financial-QuantDev-%26%2345-FinTech-startup-Affinity-North-New-York-NY-10001/10460281/6146680> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Technical-Solutions-Architect-%26%2345-Collaboration-Cisco-Systems%2C-Inc.-New-York-NY-10001/CXCISCO/1283609> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Cybersecurity-%26%2345-Penetration-Testing%2C-Manager-PwC-New-York-NY-10016/10104943/902725> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Network-Transformation-Technical-Solution-Architect-Cisco-Systems%2C-Inc.-New-York-NY-10001/CXCISCO/1281051> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Financial-Services-Crime-Technology-%26-Analytics-%26%2345-Senior-Associate-PwC-New-York-NY-10017/10104943/904818> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-%26-Analytics%2C-Engineer-%26%2345-Sr-Associate-%28Financial-Services%29-PwC-New-York-NY-10017/10104943/904747> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Cybersecurity-%26%2345-Penetration-Testing-%26%2345-Senior-Associate-PwC-New-York-NY-10016/10104943/902605> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Big-Data-Architecture-Manager-%28Financial-Services%29-PwC-New-York-NY-10016/10104943/904751> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Architect%2C-Big-Data-%26-Analytics-%26%2345-Sr-Associate-%28Financial-Services%29-PwC-New-York-NY-10017/10104943/904743> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Financial-Crime-Technology-%26-Analytics-%26%2345-Advisory-Senior-Associate-PwC-New-York-NY-10017/10104943/903143> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Talend-Architect-Capgemini-America%2C-Inc.-New-York-NY-10001/KANBAY/6335504> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-%26%2347-Data-Engineer-%24200K%2B-Gambit-Technologies-Inc-New-York-NY-10001/10116662/KB215467918> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-with-Database-experience-Virtusoft-New-York-NY-10001/10275679/6346078> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Data-Lake-Engineer-with-Java%26%2347Python-Exp-Cardinal-Integrated-Technologies-Inc-New-York-NY-10001/10121181/6224699> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/My-SQL-DBA%26%2347-Python-Engineer-NetSource%2C-Inc.-Edison-NJ-08817/NETSO/4299> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/QA-Automaton-Test-Engineer-%28Python%2C-White-Box-Testing%2C-UI-Automation%29-CV-Project-LLC-New-York-NY-10001/90767726/6260936> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Entry%26%2345Intermediate-level-Software-Developer-Python%26%2347Java-ConsultAdd-New-York-NY-10001/10504871/123123> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Lead-Software-and-Data-Engineer-%26%2345-Python%2C-AWS%2C-Big-Data-to-support-Data-Science-at-Major-Hedge-Fund-%26%2345-%24350K%26%2347year-%2B-Botsford-Associates-LLC-New-York-NY-10001/10364413/6345786> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr-Data-Engineer-%7C%7C-Python-%7C%7C-Spark%26%2347PySpark-%7C%7C-Financial-Clients-%7C%7C-Locals-%7C%7C-F2F-Amtex-Systems-Inc.-New-York-NY-10001/10124954/SDE0001> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Site-Reliability-Engineer-with-Strong-OOD-%28Python%2C-GO%2C-Java-or-C%2B%2B%29-and-Strong-Unix-%26%2347-Linux%21-200%26%2345450k%21-Archer-I.T.%2C-LLC-New-York-NY-10001/10340096/6117651> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Full%26%2345Stack-Engineer-%28Python%29-%26%2345-Health-Tech-Startup-%28%24170%26%2345250K%2B%29-Gambit-Technologies-Inc-New-York-NY-10001/10116662/NT95685972> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer%26%2345%2410%2C000-relocation-assistance-%21%21%26%2345PD-Access-Staffing-Jersey-City-NJ-07097/accperny/6320870> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Manhattan%2C-NY-%26%2345%26%2345-%2490K-%26%2345-%24120K-Cypress-Group-New-York-NY-10038/10121728/KS%26%234591917%26%2345CG> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/BA%2CQA%2CNET%2CJAVA%2CNetwork-engineer-%2CUI%2CPython-developer-MMandRBconsulting-INC-New-York-NY-10001/RTX1ce26b/5947269> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Engineer-%26%2345-DevOps-Cloud-Brains-Workgroup%2C-Inc.-New-York-NY-10001/RTL499109/6129825> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-%26%2345-OO-Python-Programmer-StaffRight-Associates-New-York-NY-10001/90939179/28000> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 64 pages/min), scraped 0 items (at 0 items/min)
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Web%26%2347Mobile-Developer%28iOS-frameworks-Core-Data%2C-Core-Animation%2C-Core-Graphics%2C-Core-Text%2C-Reactive-Native-Development%2C-UX-design-changes%2C-HTML5%2C-CSS-and-JavaScript%2C-PHP%2C-Python%2C-MySQL%2C-Adobe-Creative-Suite-%28Photoshop%2C-Illustrator%2C-XD%29%2C-WordPress%2C-Bootstrap%29-BrickLogix-Jersey-City-NJ-07097/10409520/6338433> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Python-Developer-Cygnus-Professionals-New-York-NY-10001/10426508/srpythondevelo> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/.NET-Full-Stack-Web-Developer-with-Angular%2CPython-Wallstreet-Consulting-New-York-City-NY-10259/91017621/2019%26%2345199> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Primesoft-Consulting-Services-Inc-Jersey-City-NJ-07097/90838361/1213> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Collaborate-Solutions%2C-Inc.-New-York-NY-10001/10406960/6307929> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/python-developer-Generic-Solutions-Inc-New-York-NY-10001/10222006/6348100> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-with-SQL-Auritas-New-York-NY-10001/70000157/6335371> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-PSR-Associates%2C-Inc.-New-York-NY-10001/10115826/%2312905482> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-ValueLabs%2C-Inc.-New-York-NY-10001/10493205/6341248> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:33 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-%26%2345-Big-data-OneAPPS-Bethpage-NY-11714/10380629/6338600> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Software-Engineer-%28Python%29-DTG-Consulting-Solutions-Inc.-New-York-NY-10001/datacny/6338825> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Engineer-InfoPeople-Corp-New-Hyde-Park-NY-11040/10186340/6318629> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Python-Developer-Kivish-Infotech-Corp-New-York-City-NY-10001/91027425/6341665> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Pyramid-Consulting%2C-Inc.-New-York-NY-10001/pyrmid/19%26%234553863> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Lead-Lorven-Technologies%2C-Inc.-New-York-NY-10001/10120137/6190709> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Analytics-Consultant-System-Edge-%28USA%29-L.L.C.-Jersey-City-NJ-07097/10106959/6336481> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Junior-Python-Developer-TekTalent-Inc-New-York-NY-10001/91018033/020119> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Eclaro-New-York-NY-10001/ndi/EL%26%2345NYCPYTDE> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Junior-Python-Developer-Perennial-Resources-International-Orangeburg-NY-10962/10124617/PRI%26%2345JRPYTHON%26%2345O> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr.-Python-Developer-Brooksource-Manhattan-NY-10024/10110651/JO190997574%26%2345608> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Django-Developer-Chenoa-Information-Services-Brooklyn%2C-NY-11201/chenj001/19%26%234500268> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Norgate-Technology-Inc-New-York-NY-10005/norny001/0426717%26%23454> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Kellton-Tech-Nyc-NY-10001/cyberwsi/6348258> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Perl%26%2347Python-Developer-with-SQL-Skills-ISOFT-New-York-NY-75201/91074842/1134> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/UI-Python-Developer-%26%2345-Real%26%2345time-Trading-Platform-Huxley-Banking-%26-Financial-Services-Manhattan-NY-10024/10208648/HA33196078%26%2345893> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-Engineer-%26%2345-AWS%2C-Python-Kforce-Technology-Staffing-New-York-NY-10005/kforcecx/ITAQG1831541> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:35 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-QA-Automation-Engineer-%26%2345-Ruby%2C-Java%2C-Python-Kforce-Technology-Staffing-New-York-NY-10016/kforcecx/ITAQG1860339> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Manager%2C-Software-Engineer-%26%2345-Startup-%26%2345-Python-Kforce-Technology-Staffing-New-York-NY-10003/kforcecx/ITAQG1849613> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/TWO-Lead-Software-Engineers-%28Python%2C-React%2C-MVC-Framework%2C-JavaScript%2C-Django%2C-GraphQL%2C-Scala%2C-Spark%2C-Kafka%2C-ElasticSearch%29-in-NYC-DBA-Web-Technologies-New-York-NY-10001/10216777/B_React_Django> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Kforce-Technology-Staffing-Greenwich-CT-06830/kforcecx/ITAQG1857604> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-Engineer-%26%2347-Python-%26%2347-Spark-Cypress-Group-New-York-NY-10018/10121728/JR%26%2345data%26%234508> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Scala-ElasticSearch-Lead-Velocity-Technology-Resources-Phoenix-NY-10010/80108439/19%26%234500120> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Java-Python-Developer-Infinity-Consulting-Solutions-Newark-NJ-07101/10143403/19%26%234507304> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Airflow-developer-Velocity-Technology-Resources-New-York-NY-10005/80108439/19%26%234500116> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Expert-SQL-%26-Python-%26%2347-Tableau-Solomon-Page-New-York-NY-10001/solopft/129999> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/VP-Engineering-%26%2347-eCommerce-%26%2347-Python-Cypress-Group-New-York-NY-10001/10121728/6336975> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Software-Engineer%2C-Python-Cypress-Group-New-York-NY-10018/10121728/JR%26%2345PY%26%234509> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Quant-Research-Lead-%26%2345-Trading%2C-Python-Data-Analytics-The-Forum-Group-New-York-NY-10001/forumper/NGF500> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-%28-NO-THIRD-PARTIES%29-JK-Partners-Inc-Ny-NY-10001/10379290/5920798> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Eclaro-New-York-NY-10036/ndi/19%26%234506177> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr.-Software-Engineer-%28Python%29-CyberCoders-New-York-City-NY-10001/cybercod/JS25%26%23451549641112> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Synechron-Inc.-New-York-City-NY-10001/10111699/6340169> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-STUD-%26%2345-Create-a-Uniqe-and-Different-take-on-DevOPS-%26%2345-Tech%26%2345Nique-Partners-New-York-NY-10001/90633158/6278804> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Lead-Python-Engineer-Shain-Associates-Nyc-NY-10001/10145990/5981082> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Engineer-CyberCoders-New-York-City-NY-10001/cybercod/KW2%26%23451541033118> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Python-Engineer-CyberCoders-New-York-NY-10001/cybercod/MS8%26%23451563779100> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Java-%26%2347-Python-Developer-for-Quant-Research-Gambit-Technologies-Inc-New-York-NY-10001/10116662/CR342395628> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr-Data-Engineer-with-Python%26%2347Spark%26%2347ETL%26%2347AWS-Amtex-Systems-Inc.-New-York-NY-10001/10124954/12345> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Engineer-Innovalus-Technologies-New-York-NY-10001/10481836/6339478> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Senior-Python-Developer-%28100%26%2337-REMOTE%29-CyberCoders-New-York-NY-10001/cybercod/DF6%26%23451560355104> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/C%2B%2B-%26%2347-Python-Big-Data-Distributed-Analytics-Platform-%28150%26%2345300k%29-Gambit-Technologies-Inc-New-York-NY-10001/10116662/NT683337724> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Automation-Developer-%26%2345-Java-or-Python-Alltech-Consulting-Services%2C-Inc.-New-York-NY-10001/10114281/A2556%26%23451> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Full-Stack-Developers-%28HTML5%2C-JavaScript%3B-Angular%2C-TypeScript%2C-MaterialUI%2C-Python%26%2347Java%2C-SQL%29-CodeStak-New-York-NY-10001/91085648/6331123> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Scripting-and-Automation-Consultant-%28Ansible%2C-Python-in-Oracle-environment%29-Mythics%2C-Inc-New-York-City-NY-10001/10374939/2019%26%23453274> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Data-Engineer-%26%2345-Python-CyberCoders-New-York-NY-10001/cybercod/NS3%26%23451555966107> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-The-Caldwell-Group-New-York-NY-10001/caldwell/2858> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-TekTalent-Inc-Jersey-City-NJ-07097/91018033/6330065> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Object-Oriented-Developer-%28Python%29-Matlen-Silver-New-York-NY-10001/matlenny/6171020> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Sr.-QA-Automation-Engineer-with-both-Java-%26-Python-BIT-Solutions-and-Services-Inc-New-York-NY-10010/10305697/6080039> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.dice.com/jobs/detail/Python-Developer-Isolusa-New-York-NY-10036/10132687/6754> (referer: https://www.dice.com/jobs/q-Python-limit-120-l-New%20york,NY-radius-30-startPage-1-limit-120-jobs?searchid=291607343849)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\python\dice.com\index.py", line 121, in parse_listing
+    'location': response.meta['location'], 'raw_desc': response.meta['raw_text'],
+KeyError: 'raw_text'
+2019-12-30 00:37:39 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-12-30 00:37:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 126182,
+ 'downloader/request_count': 121,
+ 'downloader/request_method_count/GET': 121,
+ 'downloader/response_bytes': 5293553,
+ 'downloader/response_count': 121,
+ 'downloader/response_status_count/200': 121,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 12, 29, 19, 37, 39, 278219),
+ 'log_count/ERROR': 120,
+ 'log_count/INFO': 9,
+ 'request_depth_max': 1,
+ 'response_received_count': 121,
+ 'scheduler/dequeued': 121,
+ 'scheduler/dequeued/memory': 121,
+ 'scheduler/enqueued': 121,
+ 'scheduler/enqueued/memory': 121,
+ 'spider_exceptions/KeyError': 120,
+ 'start_time': datetime.datetime(2019, 12, 29, 19, 36, 32, 641610)}
+2019-12-30 00:37:39 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-12-30 00:39:14 [scrapy.utils.log] INFO: Scrapy 1.0.1 started (bot: scrapybot)
+2019-12-30 00:39:14 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 08:06:12) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.17763-SP0
+2019-12-30 00:39:14 [scrapy.crawler] INFO: Overridden settings: {'FEED_FORMAT': 'json', 'FEED_URI': 'Q1.json', 'LOG_FILE': 'Q2.json', 'LOG_LEVEL': 'INFO', 'USER_AGENT': 'Mozilla/5.0'}
+2019-12-30 00:39:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2019-12-30 00:39:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-12-30 00:39:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-12-30 00:39:17 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-12-30 00:39:17 [scrapy.core.engine] INFO: Spider opened
+2019-12-30 00:39:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-12-30 00:39:17 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-12-30 00:40:17 [scrapy.extensions.logstats] INFO: Crawled 3 pages (at 3 pages/min), scraped 2 items (at 2 items/min)
+2019-12-30 00:40:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-12-30 00:40:30 [scrapy.extensions.feedexport] INFO: Stored json feed (120 items) in: Q1.json
+2019-12-30 00:40:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 126182,
+ 'downloader/request_count': 121,
+ 'downloader/request_method_count/GET': 121,
+ 'downloader/response_bytes': 5293702,
+ 'downloader/response_count': 121,
+ 'downloader/response_status_count/200': 121,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 12, 29, 19, 40, 30, 797428),
+ 'item_scraped_count': 120,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 121,
+ 'scheduler/dequeued': 121,
+ 'scheduler/dequeued/memory': 121,
+ 'scheduler/enqueued': 121,
+ 'scheduler/enqueued/memory': 121,
+ 'start_time': datetime.datetime(2019, 12, 29, 19, 39, 17, 442590)}
+2019-12-30 00:40:30 [scrapy.core.engine] INFO: Spider closed (finished)
